@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M8Y-8M-Opr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Class of 2023-->
+        <scene sceneID="9qm-EX-887">
+            <objects>
+                <viewController id="MvZ-ce-Kjx" customClass="ClassViewController" customModule="ClassOf2023" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j0W-e2-yLM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pe5-si-XgJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cZU-G9-CbQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cZU-G9-CbQ" firstAttribute="trailing" secondItem="pe5-si-XgJ" secondAttribute="trailing" id="Y6z-se-87x"/>
+                            <constraint firstItem="pe5-si-XgJ" firstAttribute="leading" secondItem="cZU-G9-CbQ" secondAttribute="leading" id="j3O-r4-TyX"/>
+                            <constraint firstItem="pe5-si-XgJ" firstAttribute="top" secondItem="cZU-G9-CbQ" secondAttribute="top" id="tbs-CV-0og"/>
+                            <constraint firstItem="cZU-G9-CbQ" firstAttribute="bottom" secondItem="pe5-si-XgJ" secondAttribute="bottom" id="wTO-6B-VpZ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="2023" image="graduationcap" catalog="system" id="s9A-6b-RZE"/>
+                    <navigationItem key="navigationItem" title="Class of 2023" id="9Ak-Oa-dii">
+                        <leftBarButtonItems>
+                            <barButtonItem enabled="NO" image="chevron.backward" catalog="system" id="qwL-cP-2O1">
+                                <connections>
+                                    <action selector="back:" destination="MvZ-ce-Kjx" id="ghd-1r-TUG"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem enabled="NO" image="chevron.forward" catalog="system" id="j1Z-bb-ILL">
+                                <connections>
+                                    <action selector="forward:" destination="MvZ-ce-Kjx" id="LAJ-el-mTB"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="action" id="3uh-S0-nu4">
+                                <connections>
+                                    <action selector="share:" destination="MvZ-ce-Kjx" id="PiO-o8-uGC"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="dN5-wh-YeP">
+                                <connections>
+                                    <action selector="reload:" destination="MvZ-ce-Kjx" id="Llv-sq-nug"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backButton" destination="qwL-cP-2O1" id="s8s-PJ-nmH"/>
+                        <outlet property="forwardButton" destination="j1Z-bb-ILL" id="hrJ-yG-1zJ"/>
+                        <outlet property="webView" destination="pe5-si-XgJ" id="41u-AK-HlA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZGq-hj-1Sm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-704" y="909"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Ut4-A9-ghN">
+            <objects>
+                <navigationController id="SS9-h4-JFq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="07x-iJ-fex"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pDa-m4-1Hz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cxv-Yn-5ns" kind="relationship" relationship="rootViewController" id="9Ne-19-FSV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x9C-q2-bZr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77" y="205"/>
+        </scene>
+        <!--Calendar-->
+        <scene sceneID="H8p-3Q-8Uq">
+            <objects>
+                <viewController id="q2x-fX-DGo" customClass="CalendarViewController" customModule="ClassOf2023" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h0f-nF-Hbw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PuZ-Y0-HYw">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kmw-fl-EgJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kmw-fl-EgJ" firstAttribute="trailing" secondItem="PuZ-Y0-HYw" secondAttribute="trailing" id="8Qr-h2-xFi"/>
+                            <constraint firstItem="PuZ-Y0-HYw" firstAttribute="leading" secondItem="Kmw-fl-EgJ" secondAttribute="leading" id="rzX-o0-32M"/>
+                            <constraint firstItem="Kmw-fl-EgJ" firstAttribute="bottom" secondItem="PuZ-Y0-HYw" secondAttribute="bottom" id="v65-nM-djd"/>
+                            <constraint firstItem="PuZ-Y0-HYw" firstAttribute="top" secondItem="Kmw-fl-EgJ" secondAttribute="top" id="zaS-F5-fMw"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" id="UBT-Tv-PIy"/>
+                    <navigationItem key="navigationItem" title="Calendar" id="owh-QZ-KEC">
+                        <leftBarButtonItems>
+                            <barButtonItem enabled="NO" image="chevron.backward" catalog="system" id="xjm-Pk-WAu">
+                                <connections>
+                                    <action selector="back:" destination="q2x-fX-DGo" id="gsy-Et-uoN"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem enabled="NO" image="chevron.forward" catalog="system" id="4VT-zN-eF7">
+                                <connections>
+                                    <action selector="forward:" destination="q2x-fX-DGo" id="nYh-4a-sgD"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="action" id="e4L-yC-yWn">
+                                <connections>
+                                    <action selector="share:" destination="q2x-fX-DGo" id="I4u-Py-to1"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="v0l-wH-WLI">
+                                <connections>
+                                    <action selector="reload:" destination="q2x-fX-DGo" id="sW9-w9-HUG"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backButton" destination="xjm-Pk-WAu" id="62Z-b4-lKZ"/>
+                        <outlet property="forwardButton" destination="4VT-zN-eF7" id="BcE-2z-03P"/>
+                        <outlet property="webView" destination="PuZ-Y0-HYw" id="OaC-X5-p3p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HsN-KZ-BaP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="909"/>
+        </scene>
+        <!--Hotchkiss Hub-->
+        <scene sceneID="AN1-oS-lPO">
+            <objects>
+                <viewController id="cxv-Yn-5ns" customClass="HubViewController" customModule="ClassOf2023" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zFP-c2-W6X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YkN-z1-Wbh">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bYb-OI-04M"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bYb-OI-04M" firstAttribute="bottom" secondItem="YkN-z1-Wbh" secondAttribute="bottom" id="EyM-MY-jgm"/>
+                            <constraint firstItem="YkN-z1-Wbh" firstAttribute="leading" secondItem="bYb-OI-04M" secondAttribute="leading" id="VdU-3W-nwp"/>
+                            <constraint firstItem="bYb-OI-04M" firstAttribute="trailing" secondItem="YkN-z1-Wbh" secondAttribute="trailing" id="mbY-mi-c2U"/>
+                            <constraint firstItem="YkN-z1-Wbh" firstAttribute="top" secondItem="bYb-OI-04M" secondAttribute="top" id="otD-h9-Da6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hub" image="newspaper" catalog="system" id="oC3-yS-0ci"/>
+                    <navigationItem key="navigationItem" title="Hotchkiss Hub" id="2aK-g9-nWd">
+                        <leftBarButtonItems>
+                            <barButtonItem enabled="NO" image="chevron.backward" catalog="system" id="Tun-BO-haQ">
+                                <connections>
+                                    <action selector="back:" destination="cxv-Yn-5ns" id="Eqd-SM-pii"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem enabled="NO" image="chevron.forward" catalog="system" id="8c5-tC-WA8">
+                                <connections>
+                                    <action selector="forward:" destination="cxv-Yn-5ns" id="3Bl-ym-EGT"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="action" id="IgY-i0-f2f">
+                                <connections>
+                                    <action selector="share:" destination="cxv-Yn-5ns" id="kHD-F6-eE9"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="R8a-q5-hld">
+                                <connections>
+                                    <action selector="reload:" destination="cxv-Yn-5ns" id="LQd-MP-8Xy"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backButton" destination="Tun-BO-haQ" id="5Q7-Xg-TXt"/>
+                        <outlet property="forwardButton" destination="8c5-tC-WA8" id="jQe-g5-CRN"/>
+                        <outlet property="webView" destination="YkN-z1-Wbh" id="v1y-Ly-ACK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ij-sy-JEv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77" y="909"/>
+        </scene>
+        <!--Suggestions-->
+        <scene sceneID="b3X-v3-DSv">
+            <objects>
+                <viewController id="bN7-qk-k2y" customClass="SuggestionsViewController" customModule="ClassOf2023" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sxc-62-Cns">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8Y-Hj-XHt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zLS-3F-zPt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zLS-3F-zPt" firstAttribute="trailing" secondItem="D8Y-Hj-XHt" secondAttribute="trailing" id="8Fj-SJ-Byj"/>
+                            <constraint firstItem="zLS-3F-zPt" firstAttribute="bottom" secondItem="D8Y-Hj-XHt" secondAttribute="bottom" id="ZRt-Ws-gli"/>
+                            <constraint firstItem="D8Y-Hj-XHt" firstAttribute="top" secondItem="zLS-3F-zPt" secondAttribute="top" id="nYZ-jf-PSE"/>
+                            <constraint firstItem="D8Y-Hj-XHt" firstAttribute="leading" secondItem="zLS-3F-zPt" secondAttribute="leading" id="vYV-gn-IwM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Suggestions" image="questionmark" catalog="system" id="Ssl-Yd-gE4"/>
+                    <navigationItem key="navigationItem" title="Suggestions" id="KGV-uj-oZS">
+                        <leftBarButtonItems>
+                            <barButtonItem enabled="NO" image="chevron.backward" catalog="system" id="Hqu-Ia-PkO">
+                                <connections>
+                                    <action selector="back:" destination="bN7-qk-k2y" id="c4v-i0-dIf"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem enabled="NO" image="chevron.forward" catalog="system" id="pbo-wv-vLn">
+                                <connections>
+                                    <action selector="forward:" destination="bN7-qk-k2y" id="Zb7-DZ-DIc"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="action" id="I1b-D2-IH4">
+                                <connections>
+                                    <action selector="share:" destination="bN7-qk-k2y" id="rdH-aV-Zgm"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="gcb-U0-Umn">
+                                <connections>
+                                    <action selector="reload:" destination="bN7-qk-k2y" id="stw-KD-WXH"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backButton" destination="Hqu-Ia-PkO" id="yNE-2t-ABF"/>
+                        <outlet property="forwardButton" destination="pbo-wv-vLn" id="VS8-Vl-8Pe"/>
+                        <outlet property="webView" destination="D8Y-Hj-XHt" id="aga-5T-goL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kd8-QN-ZTe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1623" y="909"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="gLc-V0-3VD">
+            <objects>
+                <navigationController id="NtJ-VB-4OD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="r3Q-09-pIf"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cQw-Qr-hEx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MvZ-ce-Kjx" kind="relationship" relationship="rootViewController" id="6eQ-sx-fkf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MD3-0h-O2J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-704" y="205"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="DDe-3y-EOc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="llP-7J-35j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController id="M8Y-8M-Opr" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WWo-b0-wcB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NtJ-VB-4OD" kind="relationship" relationship="viewControllers" id="ENk-yt-VM8"/>
+                        <segue destination="SS9-h4-JFq" kind="relationship" relationship="viewControllers" id="sI4-If-LJt"/>
+                        <segue destination="Wyu-Eg-qkO" kind="relationship" relationship="viewControllers" id="ya1-J2-RBw"/>
+                        <segue destination="bN7-qk-k2y" kind="relationship" relationship="viewControllers" id="RUm-9z-WN4"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="462" y="-526"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="C66-iq-UGw">
+            <objects>
+                <navigationController id="Wyu-Eg-qkO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Faf-mW-9yQ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zLk-5j-pvW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="q2x-fX-DGo" kind="relationship" relationship="rootViewController" id="HJf-Ik-wCV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PoX-Y8-d8D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848" y="205"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="chevron.forward" catalog="system" width="96" height="128"/>
+        <image name="graduationcap" catalog="system" width="128" height="106"/>
+        <image name="newspaper" catalog="system" width="128" height="108"/>
+        <image name="questionmark" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
