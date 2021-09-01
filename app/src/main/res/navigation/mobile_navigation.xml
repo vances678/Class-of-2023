@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.classof2023.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_hub"
+        android:name="com.example.classof2023.ui.hub.HubFragment"
+        android:label="@string/title_hub"
+        tools:layout="@layout/fragment_hub" />
+
+    <fragment
+        android:id="@+id/navigation_calendar"
+        android:name="com.example.classof2023.ui.calendar.CalendarFragment"
+        android:label="@string/title_calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/navigation_suggestions"
+        android:name="com.example.classof2023.ui.suggestions.SuggestionsFragment"
+        android:label="@string/title_suggestions"
+        tools:layout="@layout/fragment_suggestions" />
+</navigation>

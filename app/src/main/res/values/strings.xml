@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Class Of 2023</string>
+    <string name="title_home">2023</string>
+    <string name="title_hub">Hub</string>
+    <string name="title_calendar">Calendar</string>
+    <string name="title_suggestions">Suggest</string>
+</resources>

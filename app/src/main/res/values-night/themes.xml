@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ClassOf2023" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/hkissblue</item>
+        <item name="colorPrimaryVariant">@color/hkissblue</item>
+        <item name="colorOnPrimary">@color/hkissblue</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/hkissblue</item>
+        <item name="colorSecondaryVariant">@color/hkissblue</item>
+        <item name="colorOnSecondary">@color/hkissblue</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
