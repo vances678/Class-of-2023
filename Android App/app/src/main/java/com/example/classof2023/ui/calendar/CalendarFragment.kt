@@ -10,6 +10,8 @@ import androidx.core.view.children
 import androidx.fragment.app.Fragment
 import com.example.classof2023.R
 
+
+
 private var savedView: View? = null
 
 class CalendarFragment : Fragment() {
@@ -41,7 +43,7 @@ class CalendarFragment : Fragment() {
         webView?.webViewClient = WebViewClient()
         webView?.settings?.javaScriptEnabled = true
         if (webView?.url == null) {
-            webView?.loadUrl("https://calendar.google.com/calendar/embed?src=jspears23%40hotchkiss.org&ctz=America%2FChicago")
+            webView?.loadUrl("https://calendar.google.com/calendar/embed?src=c_vq487522gqpf4ov6hsm22a9di8%40group.calendar.google.com&ctz=America%2FNew_Yorkhttps://calendar.google.com/calendar/embed?src=c_vq487522gqpf4ov6hsm22a9di8%40group.calendar.google.com&ctz=America%2FNew_York")
         }
     }
 }

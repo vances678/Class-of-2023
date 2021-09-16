@@ -10,48 +10,20 @@ import WebKit
 
 class SuggestionsViewController: UIViewController, WKNavigationDelegate {
 
+    // Outlets
     @IBOutlet var webView: WKWebView!
-    @IBOutlet var backButton: UIBarButtonItem!
-    @IBOutlet var forwardButton: UIBarButtonItem!
     
+    // Runs when view first loads
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Setup webView
         webView.navigationDelegate = self
         let url = URL(string: "https://forms.gle/FtpLmUhh1UiAhuhAA")
-        let request = URLRequest(url: url!)
-        webView.load(request)
+        webView.load(URLRequest(url: url!))
     }
     
-    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
-        print(#function)
-        toggleNavButtons()
-    }
-    
-    func toggleNavButtons() {
-        if webView.canGoBack {
-            backButton.isEnabled = true
-        } else {
-            backButton.isEnabled = false
-        }
-        if webView.canGoForward {
-            forwardButton.isEnabled = true
-        } else {
-            forwardButton.isEnabled = false
-        }
-    }
-    
-    @IBAction func back(_ sender: Any) {
-        webView.goBack()
-    }
-    
-    @IBAction func forward(_ sender: Any) {
-        webView.goForward()
-    }
-    
-    @IBAction func reload(_ sender: Any) {
-        webView.reload()
-    }
-    
+    // Setup share button (opens share sheet for current url)
     @IBAction func share(_ sender: Any) {
         if let url = webView.url {
             let activityVC = UIActivityViewController(activityItems: [url], applicationActivities: nil)

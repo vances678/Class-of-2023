@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
+                                    <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="YES"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
                         </subviews>
@@ -99,7 +99,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
+                                    <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="YES"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
                         </subviews>
@@ -161,7 +161,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
+                                    <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="YES"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
                         </subviews>
@@ -220,10 +220,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8Y-Hj-XHt">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
+                                    <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="YES"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
                         </subviews>
@@ -237,35 +237,14 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Suggestions" image="questionmark" catalog="system" id="Ssl-Yd-gE4"/>
-                    <navigationItem key="navigationItem" title="Suggestions" id="KGV-uj-oZS">
-                        <leftBarButtonItems>
-                            <barButtonItem enabled="NO" image="chevron.backward" catalog="system" id="Hqu-Ia-PkO">
-                                <connections>
-                                    <action selector="back:" destination="bN7-qk-k2y" id="c4v-i0-dIf"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem enabled="NO" image="chevron.forward" catalog="system" id="pbo-wv-vLn">
-                                <connections>
-                                    <action selector="forward:" destination="bN7-qk-k2y" id="Zb7-DZ-DIc"/>
-                                </connections>
-                            </barButtonItem>
-                        </leftBarButtonItems>
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="action" id="I1b-D2-IH4">
-                                <connections>
-                                    <action selector="share:" destination="bN7-qk-k2y" id="rdH-aV-Zgm"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="refresh" id="gcb-U0-Umn">
-                                <connections>
-                                    <action selector="reload:" destination="bN7-qk-k2y" id="stw-KD-WXH"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                    <navigationItem key="navigationItem" title="Suggestions" id="kS1-gS-Pkx">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="QQr-pf-GNt">
+                            <connections>
+                                <action selector="share:" destination="bN7-qk-k2y" id="c7q-Nh-goO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="backButton" destination="Hqu-Ia-PkO" id="yNE-2t-ABF"/>
-                        <outlet property="forwardButton" destination="pbo-wv-vLn" id="VS8-Vl-8Pe"/>
                         <outlet property="webView" destination="D8Y-Hj-XHt" id="aga-5T-goL"/>
                     </connections>
                 </viewController>
@@ -293,7 +272,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="DDe-3y-EOc">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="llP-7J-35j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="M8Y-8M-Opr" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WWo-b0-wcB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -304,9 +282,10 @@
                         <segue destination="NtJ-VB-4OD" kind="relationship" relationship="viewControllers" id="ENk-yt-VM8"/>
                         <segue destination="SS9-h4-JFq" kind="relationship" relationship="viewControllers" id="sI4-If-LJt"/>
                         <segue destination="Wyu-Eg-qkO" kind="relationship" relationship="viewControllers" id="ya1-J2-RBw"/>
-                        <segue destination="bN7-qk-k2y" kind="relationship" relationship="viewControllers" id="RUm-9z-WN4"/>
+                        <segue destination="Hmr-8h-sRL" kind="relationship" relationship="viewControllers" id="RnR-Ae-qUW"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="llP-7J-35j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="462" y="-526"/>
         </scene>
@@ -326,6 +305,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PoX-Y8-d8D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="848" y="205"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="pis-s0-UCD">
+            <objects>
+                <navigationController id="Hmr-8h-sRL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Jmf-fq-MZ5"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mAM-Rg-19R">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bN7-qk-k2y" kind="relationship" relationship="rootViewController" id="KAY-rW-tbY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3t6-df-fyn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1622" y="205"/>
         </scene>
     </scenes>
     <resources>
