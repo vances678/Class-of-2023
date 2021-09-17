@@ -1,7 +1,13 @@
 <resources>
-    <string name="app_name">Class Of 2023</string>
-    <string name="title_home">2023</string>
-    <string name="title_hub">Hub</string>
+    <string name="app_name">Class of 2023</string>
+    <string name="title_home">Class of 2023</string>
+    <string name="nav_title_home">2023</string>
+    <string name="title_hub">Hotchkiss Hub</string>
+    <string name="nav_title_hub">Hub</string>
     <string name="title_calendar">Calendar</string>
-    <string name="title_suggestions">Suggest</string>
+    <string name="title_suggestions">Suggestions</string>
+    <string name="action_back">Back</string>
+    <string name="action_next">Next</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_share">Share</string>
 </resources>

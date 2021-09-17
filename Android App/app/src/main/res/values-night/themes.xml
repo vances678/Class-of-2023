@@ -6,11 +6,13 @@
         <item name="colorPrimaryVariant">@color/hkissblue</item>
         <item name="colorOnPrimary">@color/hkissblue</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/hkissblue</item>
-        <item name="colorSecondaryVariant">@color/hkissblue</item>
-        <item name="colorOnSecondary">@color/hkissblue</item>
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
         <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 </resources>
